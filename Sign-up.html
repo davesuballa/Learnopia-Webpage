@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Create an acoount</title>
+  <link rel="stylesheet" href="assets/css/Sign-up.css">
+
+</head>
+<body>
+
+<div class='mars'>
+  <div class='mars_border'></div>
+  <div class='mars_menu'></div>
+  <div class='mars_bg'>
+    <blink></blink>
+    <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_sunburst.png'>
+  </div>
+  <div class='mars_logo'>
+    <div class='mars_logo__empty'></div>
+    <div class='mars_logo__filled'></div>
+  </div>
+  <input checked='checked' id='index1' name='trigger' type='radio'>
+  <input id='index2' name='trigger' type='radio'>
+  <input id='index3' name='trigger' type='radio'>
+  <input id='index4' name='trigger' type='radio'>
+  <input id='index5' name='trigger' type='radio'>
+  <input id='index6' name='trigger' type='radio'>
+  <div class='mars_truck'>
+    <div class='mars_truck__wheel'>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/truckwheel.png'>
+    </div>
+    <div class='mars_truck__wheel--two'>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/truckwheel.png'>
+    </div>
+    <div class='mars_truck__body'>
+      <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/truckbody.png'>
+    </div>
+  </div>
+  <div class='mars_buildings'></div>
+  <div class='mars_parallax'></div>
+  <div class='mars_parallax--two'></div>
+  <div class='mars_scene start'>
+    <div class='mars_scene__inner'>
+      <div class='intro'>
+        <div class='intro_small'>
+           Move 
+        </div>
+        <div class='intro_to'>
+        to
+        </div>
+        <div class='intro_large'>
+          <span>L</span>
+          <span>e</span>
+          <span>a</span>
+          <span>r</span>
+          <span>n</span>
+          <span>o</span>
+          <span>p</span>
+          <span>i</span>
+          <span>a</span>
+         
+        </div>
+        <div class='intro_subheading'>
+          " Your new home awaits"
+        </div>
+        <label for='index2'>
+          Get started
+          <img class='rocket' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket_copy.png'>
+          <img class='cloud' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rcloud.png'>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class='mars_scene development'>
+    <div class='mars_scene__inner'>
+      <div class='intro_development'>
+        <div class='intro_development__small'>
+          Choose 
+        </div>
+        <div class='intro_development__large'>
+       
+          <span>Y</span>
+          <span>o</span>
+          <span>u</span>
+          <span>r</span>
+          <span>+</span>
+          <span>A</span>
+          <span>g</span>
+          <span>e</span>
+       
+        </div>
+        <div class='intro_development__mars'>
+          <label for='index3'>
+            <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/mars_big.png'>
+          </label>
+        </div>
+      </div>
+      <div class='intro_peeps'>
+        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/peeps.png'>
+      </div>
+    </div>
+  </div>
+  <div class='mars_scene people'>
+    <div class='mars_scene__inner'>
+      <div class='intro_people'>
+        <div class='wrap'>
+          <div class='intro_people__small'>
+            How old
+          </div>
+          <div class='intro_people__large'>
+            <span>a</span>
+            <span>r</span>
+            <span>e</span>
+            <span>Y</span>
+            <span>o</span>
+            <span>u</span>
+          </div>
+        </div>
+        <label for='index4'>Kid</label>
+        <label for='index4'>Teenage</label>
+        <label for='index4'>Old</label>
+        <div class='intro_people__select'>
+          <img class='fam1' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/fam1.png'>
+          <img class='fam2' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/fam2.png'>
+          <img class='fam3' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/fam3.png'>
+          <img class='fam4' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/fam4.png'>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class='mars_scene hab'>
+    <div class='mars_scene__inner'>
+      <div class='intro_hab'>
+        <div class='intro_hab__small'>
+          What do you prefer to
+        </div>
+        <div class='intro_hab__small'>
+     
+          <span>E</span>
+          <span>n</span>
+          <span>h</span>
+          <span>a</span>
+          <span>n</span>
+          <span>c</span> 
+          <span>e</span>
+          <span>?</span>
+        </div>
+        <div class='intro_hab__habs'>
+          <label id="typingSkillLabel" for='index5'>Typing skill</label>
+          <label for='index5'>Logic IQ</label>
+          <label for='index5'>Programming skill</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class='mars_scene hab' id="thankYouScene" style="display: none;">
+    <div class='mars_scene__inner'>
+      <div class='intro_hab'>
+        <div class='intro_hab__small'>
+          Registration Complete
+        </div>
+        <div class='intro_hab__large' id="thankMessage">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class='mars_scene end' style="display: none;">
+    <div class='mars_scene__inner'>
+      <div class='intro_slots'>
+        <div class='intro_slots_slot'>
+          <label for='index6'></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.getElementById("typingSkillLabel").onclick = function() {
+      // Show the "Thank you" message and hide the other scenes
+      document.getElementById("thankYouScene").style.display = "block";
+      document.querySelector('.mars_scene.hab').style.display = "none";
+      document.querySelector('.mars_scene.end').style.display = "none";
+  
+     
+    
+      // Function to update the message with each letter after a delay
+      function updateMessage() {
+        if (index < message.length) {
+          letters[index].innerText = message[index];
+          index++;
+        }
+      }
+  
+      // Delay the display of each letter in the message by 1 second
+      var interval = setInterval(updateMessage, 1000);
+  
+      // Redirect to Login.html after 5 seconds
+      setTimeout(function() {
+        clearInterval(interval);
+        window.location.href = 'AfterSignupWelcome.html';
+      }, 7000);
+    };
+
+    
+
+
+  </script>
+  
+        
+
+
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/css/WelcomeLogin.css">
+  <style>
+    .range {
+      top : 140px;
+      left : 550px;
+      width: 50%;
+      height: 5px;
+      background-color: transparent;
+    }
+    .progress {
+      height: 100%;
+      background-color: #68ddeac9;
+      width: 0%;
+      transition: width 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>System<span style="color:white;">.<span style="color:#e06c75;">out</span>.</span><span style="color:#61afef;">println</span>("</h1>
+<div class="string">
+  <h1 class="greeting en">Hello World!</h1>
+  <h1 class="greeting es">¡Hola Mundo!</h1>
+  <h1 class="greeting de">Hallo Welt!</h1>
+  <h1 class="greeting it">Ciao Mondo!</h1>  
+</div>
+<h1 class="closure">");</h1>
+
+<div class="range">
+  <div class="progress"></div>
+</div>
+
+<script>
+
+
+
+
+function simulateLoading() {
+  const progressElement = document.querySelector('.progress');
+  let progress = 0;
+  const totalIterations = 60; // Adjust the total number of iterations as needed
+  const duration = 3000; // Adjust the desired loading duration in milliseconds
+  const intervalDuration = duration / totalIterations;
+
+  const interval = setInterval(() => {
+    progress++;
+    progressElement.style.width = `${progress * (100 / totalIterations)}%`;
+
+    if (progress === totalIterations) {
+      clearInterval(interval);
+      setTimeout(redirect, 10000);
+    }
+  }, intervalDuration);
+}
+
+function redirect() {
+  window.location.href = 'Gamelist.html';
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  simulateLoading();
+});
+
+
+ 
+</script>
+
+</body>
+</html>

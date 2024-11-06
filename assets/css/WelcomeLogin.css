@@ -1,0 +1,160 @@
+/* welcome code login----------------------
+
+-------------------------------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #282c34;
+  font-size: 2vmin;
+  font-family: 'JetBrains Mono', monospace;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4bb68;
+}
+
+.string {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  animation: move 4s infinite;
+}
+
+.greeting {
+  position: relative;
+  top: 8.6vmin;
+  animation: white-out 5s infinite;
+}
+
+.closure::after {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-45vmin, -24.5vmin);
+}
+
+.closure::before {
+  content: '';
+  position: absolute;
+  height: 25vmin;
+  width: 40vmin;
+  background: #282c34;
+  transform: translate(-40vmin, 5vmin);
+}
+
+.en {
+  color: #fa8231;
+}
+
+.es {
+  color: white;
+}
+
+.de {
+  color: #c678dd;
+}
+
+.it {
+  color: #a9b0bd;
+}
+
+
+
+@keyframes move {
+  25% {
+    transform: translateY(-5.8vmin);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-11vmin);
+  }
+  75% {
+    transform: translateY(-16.5vmin);
+  }
+}
+
+@keyframes white-out {
+  50% {
+    color: white;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.range {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(30deg);
+  background-color: #333;
+  width: 300px;
+  height: 30px;
+  transform: skew(30deg);
+  margin-top: 300px;
+  margin-left: -150px;
+  overflow: hidden; /* Add this line */
+}
+
+.range:before {
+  --width: calc(var(--p) * 3px); /* Modify this line */
+
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #F3E600;
+  z-index: 0;
+  animation: load 1s forwards linear, glitch 2s infinite linear; /* Modify this line */
+}
+
+.range:after {
+  content: attr(data-progress); /* Add this line */
+  color: #000;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%) skewX(-30deg);
+  z-index: 1;
+}
+
+.range__label {
+  transform: skew(-30deg) translateY(-100%);
+  line-height: 1.5;
+}
+
+@keyframes load {
+  to {
+    width: var(--width);
+  }
+}
+
+@keyframes glitch {
+  0%,
+  5% {
+    transform: translate(0, 0);
+  }
+  1% {
+    transform: translate(-5%, -10%);
+  }
+  2% {
+    transform: translate(10%, 30%);
+  }
+  3% {
+    transform: translate(-43%, 10%);
+  }
+  4% {
+    transform: translate(2%, -23%);
+  }
+}
